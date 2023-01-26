@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>generateur</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<div id="password-generator">
+
+	<h1> Générateur de mot de passe</h1> <br>
+	 <input value="" id="passwordoutput">
+
+    <div class="range">
+      
+      <input 
+        type="number"
+        value="12"
+       
+        id="taille"
+       
+      > Caractères
+
+    </div>
+
+    <div class="flex">
+      <input type="checkbox" id="lower">
+      <label for="lower">a⇨z</label>
+
+      <input type="checkbox" id="upper">
+      <label for="upper">A⇨Z</label> 
+
+      <input type="checkbox" id="numbers">
+      <label for="numbers">0⇨9</label>
+
+      <input type="checkbox" id="symbols">
+      <label for="symbols">!⇨?</label>
+    </div>
+
+    <button id="generateButton" type="button" onclick="generateur()">Générer mdp</button>
+	<button id="generateButton3" type="button" onclick="best()">Best</button>
+	<button id="generateButton2" type="button" onclick="copie()">Copier</button>
+
+  </div>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script  src="javascript.js"></script>
+
+</body>
+</html>
